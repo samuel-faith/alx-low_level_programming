@@ -5,7 +5,7 @@
 *
 * @n: number to check
 *
-* Return : returns n if less or greater than 0
+* Return : returns n if greater than 0, -n otherwise
 */
 
 int _abs(int n)
