@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*Main - Entry point
+* Main - Entry point
 *
 * Description - functions that checks for upper case letter
 *
@@ -9,7 +9,7 @@
 *
 *@c: cahracter to be checked
 *
-* Return: returns 1 if uppercase, otherside 0
+* Return: returns 1 if uppercase, otherwise 0
 */
 
 int _isupper(int c)
@@ -20,3 +20,4 @@ int _isupper(int c)
 
 	else
 		return (0);
+}
