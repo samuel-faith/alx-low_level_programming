@@ -2,7 +2,7 @@
 
 /**
 * print_numbers - prints 0-9
-* 
+*
 * Return: 0 (success)
 */
 
