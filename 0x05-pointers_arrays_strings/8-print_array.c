@@ -1,15 +1,12 @@
 #include "main.h"
 
 /**
-* print_array - prints n elements of an array of integers
-*
-*@a: int to check
-*
-@n: int to check
-*/
+ * print_array - print n element of an array of integers
+ * @a: int to check
+ * @n: int to check
+ */
 
 void print_array(int *a, int n)
-
 {
 	int x;
 
@@ -20,7 +17,5 @@ void print_array(int *a, int n)
 		else
 			printf("%d", a[x]);
 	}
-
-	printf('\n');
-
+	printf("\n");
 }
