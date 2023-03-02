@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* _strncpy  copies a string
+* _strncpy - copies a string
 *
 *@dest: the destination of the strings
 *
-*@src: the source of the strings 
+*@src: the source of the strings
 *
 *@n: the length of int
 *
