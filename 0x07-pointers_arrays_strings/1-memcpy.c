@@ -5,9 +5,9 @@
 *
 *@n: bytes to copy
 *
-@src: bytes from memory area
+*@src: bytes from memory area
 *
-@dest: copied to memory area
+*@dest: copied to memory area
 *
 *Return: a pointer to @dest
 */
