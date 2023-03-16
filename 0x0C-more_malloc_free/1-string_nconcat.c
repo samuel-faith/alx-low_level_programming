@@ -15,30 +15,37 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 {
-	unsigned int s1_len = 0, s2_len = 0;
+	unsigned int x, y, z;
 	
-	char *result;
+	char *s;
 
 	if (s1 == NULL)
-		s1 = "";
+		x = 0;
+	else
+		for (x = 0; s1[x]; ++x)
+			;
 	
 	if (s2 == NULL)
-		s2 = "";
+		y = 0;
+	else
+		for (y = 0; s2[y]; ++y)
+			;
 
-	s1_len = strlen(s1);
-	s2_len = strlen(s2);
+	if (y > n)
+		y = n;
 
-	if (n >= s2_len)
-		n = s2_len;
+	s = malloc(sizeof(char) * (x + y + 1));
 
-	result = (char *) malloc(sizeof(char) * (s1_len + n + 1));
+	if (s == NULL)
+		return (NULL);
 
-	if (result == NULL)
-		return NULL;
+	for (z = 0; z < x; z++)
+		s[z] = s1[z];
 
-	memcpy(result, s1, s1_len);
-	memcpy(result + s1_len, s2, n);
-	result[s1_len + n] = '\0';
+	for (z = 0; z < y; z++)
+		s[z + x] = s2[z];
+
+	s[x + y] = '\0';
 
 	return result;
 }
