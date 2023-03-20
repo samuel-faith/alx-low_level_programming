@@ -8,7 +8,7 @@
 *Return: 0 success
 */
 
-int main()
+int main(void)
 
 {
 	printf("The name of the file is: %s\n", __FILE__);
