@@ -1,0 +1,1 @@
+A variadic function is a function that can take a variable number of arguments. This means that the number and types of arguments can be different each time the function is called. Variadic functions are declared using an ellipsis (...) in the argument list.
