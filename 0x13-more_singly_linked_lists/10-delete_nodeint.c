@@ -5,7 +5,6 @@
 * index of a listint_t linked list.
 * @head: pointer to a pointer to the head node of the linked list
 * @index: index of the node that should be deleted, starting from 0
-*
 * Return: 1 if it succeeded, -1 if it failed
 */
 
@@ -37,5 +36,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		ptr->next = temp->next;
 
 	free(temp);
+
 	return (1);
 }
