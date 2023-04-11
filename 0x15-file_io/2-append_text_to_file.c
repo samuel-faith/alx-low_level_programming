@@ -17,7 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
-	file = fopen(filename, "a")
+	sam = fopen(filename, "a");
 
 	if (!sam)
 		return (-1);
